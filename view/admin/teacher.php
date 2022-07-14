@@ -25,6 +25,8 @@
     <title>AdminKit Demo - Bootstrap 5 Admin Template</title>
 
     <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../assets/css/style.css" rel="stylesheet" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"
       rel="stylesheet"
@@ -40,15 +42,15 @@
           </a>
 
           <ul class="sidebar-nav">
-            <li class="sidebar-item active">
-              <a class="sidebar-link" href="index.html">
+            <li class="sidebar-item ">
+              <a class="sidebar-link" href="index.php">
                 <i class="align-middle" data-feather="sliders"></i>
                 <span class="align-middle">Dashboard</span>
               </a>
             </li>
 
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="teacher.php">
+            <li class="sidebar-item active">
+              <a class="sidebar-link" href="pages-profile.html">
                 <i class="align-middle" data-feather="user"></i>
                 <span class="align-middle">Teachers </span>
               </a>
@@ -176,149 +178,19 @@
         </nav>
 
         <main class="content">
-          <div class="container-fluid p-0">
-            <h1 class="h3 mb-3"><strong>School</strong> Dashboard</h1>
-
-            <div class="row">
-              <div class="col-xl-6 col-xxl-5 d-flex">
-                <div class="w-100">
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <div class="card">
-                        <div class="card-body">
-                          <div class="row">
-                            <div class="col mt-0">
-                              <h5 class="card-title">Students</h5>
-                            </div>
-
-                            <div class="col-auto">
-                              <div class="stat text-primary">
-                                <i class="align-middle" data-feather="user"></i>
-                              </div>
-                            </div>
-                          </div>
-                          <h1 class="mt-1 mb-3">0</h1>
-                          <div class="mb-0">
-                            <span class="text-muted">Number Of Students</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="card-body">
-                          <div class="row">
-                            <div class="col mt-0">
-                              <h5 class="card-title">Parents</h5>
-                            </div>
-
-                            <div class="col-auto">
-                              <div class="stat text-primary">
-                                <i class="align-middle" data-feather="book"></i>
-                              </div>
-                            </div>
-                          </div>
-                          <h1 class="mt-1 mb-3">0</h1>
-                          <div class="mb-0">
-                            <span class="text-success">
-                              <i class="mdi mdi-arrow-bottom-right"></i>
-                            </span>
-                            <span class="text-muted">Number oF Parents</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-6">
-                      <div class="card">
-                        <div class="card-body">
-                          <div class="row">
-                            <div class="col mt-0">
-                              <h5 class="card-title">Teachers</h5>
-                            </div>
-
-                            <div class="col-auto">
-                              <div class="stat text-primary">
-                                <i
-                                  class="align-middle"
-                                  data-feather="sliders"
-                                ></i>
-                              </div>
-                            </div>
-                          </div>
-                          <h1 class="mt-1 mb-3">0</h1>
-                          <div class="mb-0">
-                            <span class="text-success">
-                              <i class="mdi mdi-arrow-bottom-right"></i>
-                            </span>
-                            <span class="text-muted">Number Of Teachers</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="card-body">
-                          <div class="row">
-                            <div class="col mt-0">
-                              <h5 class="card-title">Classes</h5>
-                            </div>
-
-                            <div class="col-auto">
-                              <div class="stat text-primary">
-                                <i
-                                  class="align-middle"
-                                  data-feather="layout"
-                                ></i>
-                              </div>
-                            </div>
-                          </div>
-                          <h1 class="mt-1 mb-3">0</h1>
-                          <div class="mb-0">
-                            <span class="text-danger">
-                              <i class="mdi mdi-arrow-bottom-right"></i>
-                            </span>
-                            <span class="text-muted">Number Of Classes</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-xl-6 col-xxl-7">
-                <div class="card flex-fill w-100">
-                  <div class="card-header">
-                    <h5 class="card-title mb-0">Users Analytics</h5>
-                  </div>
-                  <div class="card-body py-3">
-                    <div class="chart chart-sm">
-                      <canvas id="chartjs-dashboard-line"></canvas>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-12 col-md-6 col-xxl-3 d-flex order-1 order-xxl-1">
-                <div class="card flex-fill">
-                  <div class="card-header">
-                    <h5 class="card-title mb-0">Calendar</h5>
-                  </div>
-                  <div class="card-body d-flex">
-                    <div class="align-self-center w-100">
-                      <div class="chart">
-                        <div id="datetimepicker-dashboard"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="container-fluid p-0 d-flex align-items-center justify-content-between">
+            <h1 class="h3 mb-3"><strong>Teacher</strong></h1>
+            <button class="addbtn"><i
+                      class="align-middle me-1"
+                      data-feather="plus-circle"
+                    ></i> Create New</button>
           </div>
         </main>
 
         <?php
-        include_once('footer.php');
-        ?>
-      </div>
+          include_once('footer.php');
+       ?>
+       </div>
     </div>
 
     <script src="../../assets/js/bootstrap.bundle.min.js"></script>

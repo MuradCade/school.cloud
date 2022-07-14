@@ -13,3 +13,18 @@
 .font-large{
     font-weight: bold;
 }
+
+.addbtn{
+    background-color: #00BDDA;
+    padding:10px 10px;
+    border:unset;
+    color:white;
+    border-radius: 20px;
+}
+
+.addbtn:hover{
+    background-color: unset;
+       border:1px solid #00BDDA;
+       color:#00BDDA;
+
+}
