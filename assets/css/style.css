@@ -28,3 +28,43 @@
        color:#00BDDA;
 
 }
+
+.capitalize{
+    text-transform: capitalize;
+}
+
+.ml-20{
+    margin-left: 120px;
+}
+
+.img-md{
+    width: 80px;
+    margin-left: 10px;
+    
+}
+
+.space{
+    margin-left: 120px;
+}
+.checkbox-space{
+        margin-right: 10px;
+}
+
+.input-space{
+    margin-left: 24px;
+}
+.space-100{
+    margin-right: 20px;
+}
+
+.font-bold-100{
+        font-weight: 400;
+        position: relative;
+}
+
+
+
+/* line hieght */
+.line-1{
+    line-height: 30px;
+}

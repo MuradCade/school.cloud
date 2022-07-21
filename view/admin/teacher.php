@@ -7,22 +7,14 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta
-      name="description"
-      content="Responsive Admin &amp; Dashboard Template based on Bootstrap 5"
-    />
-    <meta name="author" content="AdminKit" />
-    <meta
-      name="keywords"
-      content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web"
-    />
+   
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="shortcut icon" href="img/icons/icon-48x48.png" />
 
     <link rel="canonical" href="https://demo-basic.adminkit.io/" />
 
-    <title>AdminKit Demo - Bootstrap 5 Admin Template</title>
+    <title>Teacher</title>
 
     <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="../../assets/css/style.css" rel="stylesheet" />
@@ -178,15 +170,168 @@
         </nav>
 
         <main class="content">
-          <div class="container-fluid p-0 d-flex align-items-center justify-content-between">
-            <h1 class="h3 mb-3"><strong>Teacher</strong></h1>
+          <div class="container-fluid p-0 d-flex align-items-center justify-content-between mb-2">
+            <p class= "mb-3"><span style="font-size:14px; color:gray;">Dashboard</span> / <strong>Teacher</strong></p>
             <button class="addbtn"><i
                       class="align-middle me-1"
                       data-feather="plus-circle"
                     ></i> Create New</button>
           </div>
-        </main>
+          <div class="card-footer mt-2" id="itemhide">
+              <div class="">
+                <label class='form-label d-block'>Search Particular Teacher</label>
+              <input type="text" placeholder='Search Here ..' class='form-control w-full'>
+              <button class='btn btn-primary mt-2'>Search</button>
+              </div>
 
+
+              <!-- table of data -->
+              <div class="mt-2">
+
+              <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Employe Id</th>
+                <th scope="col">Full Name</th>
+                <th scope="col capitalize">Incharge Class</th>
+                <th scope="col">Subjects Handling</th>
+                <th scope="col">Phone</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Otto</td>
+                <td>Markvdf vdfv dfvdf vdfvdf</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Otto</td>
+                <td>Markvdvdfvdfvdfvdf</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+                
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- end table -->
+      </div>
+      <div class="container" id="addteacherinfo" style='display:none'>
+        <div class="card-footer rounded">
+          <p class=' h5 font-bold' style='line-height:2'>PERSONAL DETAILS</p>
+          <div class="d-flex mt-3 ml-20">
+            <p style='font-weight:bold; margin-right:120px;'>Profile Image</p>
+            <p>Gender</p>
+          </div>
+          <div class="d-flex ml-20">
+          <img src="../../assets/img/user.jpg" alt="user-logo" class='img-md'>
+          <div class="d-flex space">
+            <p> <input type="checkbox" checked> Male</p>
+            <p class='checkbox-space'></p>
+            <p> <input type="checkbox"> Female</p></div>
+          </div>
+        </div>
+        
+        <!-- teacher form -->
+        <div class="card-footer">
+        <div class="form-group">
+              <form>
+             <div class="container">
+             <div class="row px-4">
+                <div class='col-12 col-md-4  space-100 col-lg-4'>
+                 <label class='form-label font-bold-100 text-md-info'>First Name</label>
+                  <input type="text" class='form-control' placeholder='Enter Firstname ..'>
+                 </div>
+                 <div class='col-12 col-md-4 space-100 col-lg-4'>
+                 <label class='form-label font-bold-100'>Middle Name</label>
+                  <input type="text" class='form-control' placeholder='Enter Middlename ..'>
+                 </div>
+                 <div class='col-12 col-md-4 space-100 col-lg-3'>
+                 <label class='form-label font-bold-100'>Last Name</label>
+                  <input type="text" class='form-control' placeholder='Enter Lastname ..'>
+                 </div>
+                </div>
+             </div>
+                <!-- second row input field -->
+                <div class="container">
+                <div class="row  px-4 mt-4">
+                <div class='col-12 col-md-4 space-100 col-lg-4 space-100'>
+                 <label class='form-label font-bold-100'>Date Of Birth</label>
+                  <input type="date" class='form-control'>
+                 </div>
+                 <div class='col-12 col-md-4 space-100 col-lg-4 space-100'>
+                 <label class='form-label font-bold-100'>Phone</label>
+                  <input type="tel" class='form-control' placeholder='example 063...'>
+                 </div>
+                 <div class='col-12 col-md-4 space-100 col-lg-3 space-100'>
+                 <label class='form-label font-bold-100'>Qualification</label>
+                  <input type="text" class='form-control' placeholder='Enter Qualification...'>
+                 </div>
+                </div>
+                </div>
+                <!-- third row input field -->
+                <div class="container">
+                <div class="row  px-4 mt-4">
+                <div class='col-12 col-md-4 space-100 col-lg-4 space-100'>
+                 <label class='form-label font-bold-100'>Current Position</label>
+                  <input type="text" class='form-control' placeholder='Enter Current Position...'>
+                 </div>
+                 <div class='col-12 col-md-4 space-100 col-lg-4 space-100'>
+                 <label class='form-label font-bold-100'>Joining Date</label>
+                  <input type="date" class='form-control'>
+                 </div>
+                 <div class='col-12 col-md-4 space-100 col-lg-3 space-100'>
+                 <label class='form-label font-bold-100'>Leaving Date</label>
+                  <input type="date" class='form-control'>
+                 </div>
+                </div>
+                <div class="px-4">
+                <button class='btn btn-primary mt-4 w-full px-5'>Save</button>
+                </div>
+              </div>
+              </form>
+            </div>
+        </div>
+        <!-- extre space -->
+        <div class="card-footer"></div>
+        <br>
+        <!-- account Details -->
+        <div class="card-footer" id="addteacherasuser" style='display:none'>
+          <p Class='h5 font-bold line-1'>ACCOUNT INFORMATION</p>
+          <div class="container">
+            <div class="form-group">
+              <label class='form-label'>Email Address <span class='text-danger'>*</span></label>
+              <input type="email" class='form-control mb-2' placeholder='Enter Email...'>
+              <label class='form-label'>Username <span class='text-danger'>*</span></label>
+              <input type="text" class='form-control mb-2' placeholder='Enter Username...'>
+              <label class='form-label'>Password <span class='text-danger'>*</span></label>
+              <input type="password" class='form-control mb-2' placeholder='Enter Password...'>
+              <label class='form-label'>Confirm Password <span class='text-danger'>*</span></label>
+              <input type="email" class='form-control' placeholder='Confirm Password...'>
+              <button class='btn btn-success mt-2'>Add New User</button>
+            </div>
+          </div>
+        </div>
+
+        </main>
         <?php
           include_once('footer.php');
        ?>
@@ -194,6 +339,7 @@
     </div>
 
     <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/main.js"></script>
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
