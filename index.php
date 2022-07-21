@@ -12,8 +12,8 @@
       <img class="mb-4" src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/school-logo-design-template-b3bfdceb55d1cbc48f1ce50fd4e1ef24_screen.jpg?ts=1629941736" alt="logo" width="150" height="150" style='border-radius:50%;'>
       <h5 class="h2 mb-3"style='font-weight:bold;'>Login</h5>
       <h5 class="h3 mb-3 font-weight-normal" style='font-size:14px; font-weight:bold; color:gray;'>Login To Get Unlimited Access</h5>
-      <input type="email" id="inputEmail" class="form-control mb-3" placeholder="Email address" required autofocus>
-      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+      <input type="email" id="inputEmail" class="form-control mb-3" placeholder="Enter Username..." required autofocus>
+      <input type="password" id="inputPassword" class="form-control" placeholder="Enter Password..." required>
       <div class="checkbox mb-3">
         <label>
           <input type="checkbox" value="remember-me"> Remember me
