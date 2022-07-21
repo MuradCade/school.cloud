@@ -20,7 +20,7 @@
         </label>
       </div>
       <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
-      <p class="mt-5 mb-3 text-muted">&reg; Developer By TayoTech</p>
+      <p class="mt-5 mb-3 text-muted">&reg; Developed By TayoTech</p>
     </form>
 <script src="assets/js/bootstrap.bundle.js"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
