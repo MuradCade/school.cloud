@@ -7,16 +7,18 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    
+   
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="shortcut icon" href="img/icons/icon-48x48.png" />
 
     <link rel="canonical" href="https://demo-basic.adminkit.io/" />
 
-    <title>Dashboard</title>
+    <title>Student</title>
 
     <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../assets/css/style.css" rel="stylesheet" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"
       rel="stylesheet"
@@ -32,7 +34,7 @@
           </a>
 
           <ul class="sidebar-nav">
-            <li class="sidebar-item active">
+            <li class="sidebar-item ">
               <a class="sidebar-link" href="index.php">
                 <i class="align-middle" data-feather="sliders"></i>
                 <span class="align-middle">Dashboard</span>
@@ -46,15 +48,15 @@
               </a>
             </li>
 
-            <li class="sidebar-item">
-              <a class="sidebar-link"  href="student.php">
+            <li class="sidebar-item active">
+              <a class="sidebar-link" href="student.php">
                 <i class="align-middle" data-feather="credit-card"></i>
                 <span class="align-middle">Student</span>
               </a>
             </li>
 
             <li class="sidebar-item">
-              <a class="sidebar-link"  href="parent.php">
+              <a class="sidebar-link" href="parent.php">
                 <i class="align-middle" data-feather="users"></i>
                 <span class="align-middle">Parent</span>
               </a>
@@ -68,7 +70,7 @@
             </li>
 
             <li class="sidebar-item">
-              <a class="sidebar-link" href="subject.php">
+              <a class="sidebar-link"href="subject.php">
                 <i class="align-middle" data-feather="check-square"></i>
                 <span class="align-middle">Subject</span>
               </a>
@@ -157,153 +159,229 @@
         </nav>
 
         <main class="content">
-          <div class="container-fluid p-0">
-            <h1 class="h3 mb-3"><strong>School</strong> Dashboard</h1>
-
-            <div class="row">
-              <div class="col-xl-6 col-xxl-5 d-flex">
-                <div class="w-100">
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <div class="card">
-                        <div class="card-body">
-                          <div class="row">
-                            <div class="col mt-0">
-                              <h5 class="card-title">Students</h5>
-                            </div>
-
-                            <div class="col-auto">
-                              <div class="stat text-primary">
-                                <i class="align-middle" data-feather="user"></i>
-                              </div>
-                            </div>
-                          </div>
-                          <h1 class="mt-1 mb-3">0</h1>
-                          <div class="mb-0">
-                            <span class="text-muted">Number Of Students</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="card-body">
-                          <div class="row">
-                            <div class="col mt-0">
-                              <h5 class="card-title">Parents</h5>
-                            </div>
-
-                            <div class="col-auto">
-                              <div class="stat text-primary">
-                                <i class="align-middle" data-feather="book"></i>
-                              </div>
-                            </div>
-                          </div>
-                          <h1 class="mt-1 mb-3">0</h1>
-                          <div class="mb-0">
-                            <span class="text-success">
-                              <i class="mdi mdi-arrow-bottom-right"></i>
-                            </span>
-                            <span class="text-muted">Number oF Parents</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-6">
-                      <div class="card">
-                        <div class="card-body">
-                          <div class="row">
-                            <div class="col mt-0">
-                              <h5 class="card-title">Teachers</h5>
-                            </div>
-
-                            <div class="col-auto">
-                              <div class="stat text-primary">
-                                <i
-                                  class="align-middle"
-                                  data-feather="sliders"
-                                ></i>
-                              </div>
-                            </div>
-                          </div>
-                          <h1 class="mt-1 mb-3">0</h1>
-                          <div class="mb-0">
-                            <span class="text-success">
-                              <i class="mdi mdi-arrow-bottom-right"></i>
-                            </span>
-                            <span class="text-muted">Number Of Teachers</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="card-body">
-                          <div class="row">
-                            <div class="col mt-0">
-                              <h5 class="card-title">Classes</h5>
-                            </div>
-
-                            <div class="col-auto">
-                              <div class="stat text-primary">
-                                <i
-                                  class="align-middle"
-                                  data-feather="layout"
-                                ></i>
-                              </div>
-                            </div>
-                          </div>
-                          <h1 class="mt-1 mb-3">0</h1>
-                          <div class="mb-0">
-                            <span class="text-danger">
-                              <i class="mdi mdi-arrow-bottom-right"></i>
-                            </span>
-                            <span class="text-muted">Number Of Classes</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+          <div class="container-fluid p-0 d-flex align-items-center justify-content-between mb-2">
+            <p class= "mb-3"><span style="font-size:14px; color:gray;">Dashboard</span> / <strong>Student</strong></p>
+            <button class="addbtn"><i
+                      class="align-middle me-1"
+                      data-feather="plus-circle"
+                    ></i> Create New</button>
+          </div>
+          <div class="card-footer mt-2" id="itemhide">
+              <div class="">
+                <label class='form-label'>Search Particular Student</label>
+              <input type="text" placeholder='Search Here ..' class='form-control w-full' style="height:40px" id="focus" onkeyup="myFunction()">
               </div>
 
-              <div class="col-xl-6 col-xxl-7">
-                <div class="card flex-fill w-100">
-                  <div class="card-header">
-                    <h5 class="card-title mb-0">Users Analytics</h5>
-                  </div>
-                  <div class="card-body py-3">
-                    <div class="chart chart-sm">
-                      <canvas id="chartjs-dashboard-line"></canvas>
-                    </div>
-                  </div>
+
+              <!-- table of data -->
+              <div class="mt-2">
+
+              <table class="table" id="table">
+              <thead>
+    <tr>
+      <th class="th-sm">Roll No
+      </th>
+      <th class="th-sm">Fullname
+      </th>
+      <th class="th-sm">Parent
+      </th>
+      <th class="th-sm">Street Address
+      </th>
+      <th class="th-sm">Class Name
+      </th>
+      <th class="th-sm">Phone
+      </th>
+      <th class="th-sm">Action
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>142-3131</td>
+      <td>John Doe</td>
+      <td>John Doe</td>
+      <td>california</td>
+      <td>F4</td>
+      <td>0987654</td>
+      <td>
+        <button class="btn btn-success mb-1">Update</button>
+        <button class="btn btn-danger">Delete</button>
+      </td>
+    </tr>
+    <tr>
+      <td>142-3132</td>
+      <td>John Doe</td>
+      <td>John Doe</td>
+      <td>california</td>
+      <td>F4</td>
+      <td>0987654</td>
+      <td>
+        <button class="btn btn-success mb-1">Update</button>
+        <button class="btn btn-danger">Delete</button>
+      </td>
+    </tr>
+    <tr>
+      <td>142-3133</td>
+      <td>John Doe</td>
+      <td>John Doe</td>
+      <td>california</td>
+      <td>F4</td>
+      <td>0987654</td>
+      <td>
+        <button class="btn btn-success mb-1">Update</button>
+        <button class="btn btn-danger">Delete</button>
+      </td>
+    </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- end table -->
+      </div>
+      <div class="container" id="addteacherinfo" style='display:none'>
+        <div class="card-footer rounded">
+          <p class=' h5 font-bold' style='line-height:2'>PERSONAL DETAILS</p>
+          <div class="d-flex mt-3 ml-20">
+            <p style='font-weight:bold; margin-right:120px;'>Profile Image</p>
+        </div>
+        <p class="text-center">Gender</p>
+          <div class="d-flex ml-20">
+        <div class="d-flex flex-column">
+        <img src="../../assets/img/user.jpg" alt="user-logo" class='img-md'>
+          <input type="file" class="mt-3">
+        </div>
+          <div class="d-flex space px-5">
+            <p> <input type="checkbox" checked> Male</p>
+            <p class='checkbox-space'></p>
+            <p> <input type="checkbox"> Female</p></div>
+          </div>
+        </div>
+        
+        <!-- teacher form -->
+        <div class="card-footer">
+        <div class="form-group">
+              <form>
+             <div class="container">
+             <div class="row px-4">
+                <div class='col-12 col-md-4  space-100 col-lg-4'>
+                 <label class='form-label font-bold-100 text-md-info'>First Name</label>
+                  <input type="text" class='form-control' placeholder='Enter Firstname ..'>
+                 </div>
+                 <div class='col-12 col-md-4 space-100 col-lg-4 mb-2'>
+                 <label class='form-label font-bold-100 mt-2 mb-2'>Middle Name</label>
+                  <input type="text" class='form-control' placeholder='Enter Middlename ..'>
+                 </div>
+                 <div class='col-12 col-md-4 space-100 col-lg-3'>
+                 <label class='form-label font-bold-100'>Last Name</label>
+                  <input type="text" class='form-control' placeholder='Enter Lastname ..'>
+                 </div>
+                </div>
+             </div>
+                <!-- second row input field -->
+                <div class="container">
+                <div class="row  px-4 mt-2">
+                <div class='col-12 col-md-4 space-100 col-lg-4 space-100'>
+                 <label class='form-label font-bold-100'>Date Of Birth</label>
+                  <input type="date" class='form-control'>
+                 </div>
+                 <div class='col-12 col-md-4 space-100 col-lg-4 space-100'>
+                 <label class='form-label font-bold-100 mt-2 mb-2'>Phone</label>
+                  <input type="tel" class='form-control' placeholder='example 063...'>
+                 </div>
+                 <div class='col-12 col-md-4 space-100 col-lg-3 space-100'>
+                 <label class='form-label font-bold-100 mt-2'>Parent Name</label>
+                  <input type="text" class='form-control' placeholder='Parent Name'>
+                 </div>
+                </div>
+                </div>
+                <!-- third row input field -->
+                <div class="container">
+                <div class="row  px-4 mt-3">
+                <div class='col-12 col-md-4 space-100 col-lg-4 space-100'>
+                 <label class='form-label font-bold-100'>Parent Phone</label>
+                  <input type="tel" class='form-control' placeholder="Parent Phone..">
+                 </div>
+                 <div class='col-12 col-md-4 space-100 col-lg-4 space-100'>
+                 <label class='form-label font-bold-100 mb-2 mt-2 mb'>Education Level</label>
+                  <input type="text" class='form-control' placeholder="Education Level...">
+                 </div>
+                 <div class='col-12 col-md-4 space-100 col-lg-3 space-100'>
+                 <label class='form-label font-bold-100 mt-2'>Class Name(Number)</label>
+                  <input type="text" class='form-control' placeholder="Class Number">
+                 </div>
+                 <div class='col-12 col-md-4 space-100 col-lg-3 space-100 mt-2'>
+                 <label class='form-label font-bold-100 mt-2'>Roll Number</label>
+                  <input type="text" class='form-control' placeholder="Roll Number">
+                 </div>
+                 <div class='col-12 col-md-4 space-100 col-lg-3 space-100 mt-2'>
+                 <label class='form-label font-bold-100 mt-2'>Current Address</label>
+                  <input type="text" class='form-control' placeholder="Currenr Address">
+                 </div>
+                 <div class='col-12 col-md-4 space-100 col-lg-3 space-100 mt-2'>
+                 <label class='form-label font-bold-100 mt-2'>City Name</label>
+                  <input type="text" class='form-control' placeholder="City Name">
+                 </div>
+                </div>
+                <div class="px-4">
+                <button class='btn btn-primary mt-4 w-full px-5'>Save</button>
                 </div>
               </div>
+              </form>
             </div>
-
-            <div class="row">
-              <div class="col-12 col-md-8 col-xxl-8 d-flex order-1 order-xxl-1">
-                <div class="card flex-fill">
-                  <div class="card-header">
-                    <h5 class="card-title mb-0">Calendar</h5>
-                  </div>
-                  <div class="card-body d-flex">
-                    <div class="align-self-center w-100">
-                      <div class="chart">
-                        <div id="datetimepicker-dashboard"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        </div>
+        <!-- extre space -->
+        <div class="card-footer"></div>
+        <br>
+        <!-- account Details -->
+        <div class="card-footer" id="addteacherasuser" style='display:none'>
+          <p Class='h5 font-bold line-1'>ACCOUNT INFORMATION</p>
+          <div class="container">
+            <div class="form-group">
+              <label class='form-label'>Email Address <span class='text-danger'>*</span></label>
+              <input type="email" class='form-control mb-2' placeholder='Enter Email...'>
+              <label class='form-label'>Username <span class='text-danger'>*</span></label>
+              <input type="text" class='form-control mb-2' placeholder='Enter Username...'>
+              <label class='form-label'>Password <span class='text-danger'>*</span></label>
+              <input type="password" class='form-control mb-2' placeholder='Enter Password...'>
+              <label class='form-label'>Confirm Password <span class='text-danger'>*</span></label>
+              <input type="email" class='form-control' placeholder='Confirm Password...'>
+              <button class='btn btn-success mt-2'>Add New User</button>
             </div>
           </div>
-        </main>
+        </div>
 
+        </main>
         <?php
-        include_once('footer.php');
-        ?>
-      </div>
+          include_once('footer.php');
+       ?>
+       </div>
     </div>
 
     <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/main.js"></script>
+    <script defer>
+        // filter table by search
+        function myFunction() {
+  // Declare variables
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("focus");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("table");
+  tr = table.getElementsByTagName("tr");
 
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+      td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+    </script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         var ctx = document

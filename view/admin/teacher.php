@@ -29,7 +29,7 @@
     <div class="wrapper">
       <nav id="sidebar" class="sidebar js-sidebar">
         <div class="sidebar-content js-simplebar">
-          <a class="sidebar-brand" href="index.html">
+          <a class="sidebar-brand" href="index.php">
             <span class="align-middle">Admin Dashboard</span>
           </a>
 
@@ -42,69 +42,62 @@
             </li>
 
             <li class="sidebar-item active">
-              <a class="sidebar-link" href="pages-profile.html">
+              <a class="sidebar-link" href="teacher.php">
                 <i class="align-middle" data-feather="user"></i>
                 <span class="align-middle">Teachers </span>
               </a>
             </li>
 
             <li class="sidebar-item">
-              <a class="sidebar-link" href="pages-sign-in.html">
+              <a class="sidebar-link" href="student.php">
                 <i class="align-middle" data-feather="credit-card"></i>
                 <span class="align-middle">Student</span>
               </a>
             </li>
 
             <li class="sidebar-item">
-              <a class="sidebar-link" href="pages-sign-up.html">
+              <a class="sidebar-link"  href="parent.php">
                 <i class="align-middle" data-feather="users"></i>
                 <span class="align-middle">Parent</span>
               </a>
             </li>
 
             <li class="sidebar-item">
-              <a class="sidebar-link" href="ui-buttons.html">
+              <a class="sidebar-link" href="class.php">
                 <i class="align-middle" data-feather="columns"></i>
                 <span class="align-middle">Classes</span>
               </a>
             </li>
 
             <li class="sidebar-item">
-              <a class="sidebar-link" href="ui-forms.html">
+              <a class="sidebar-link" href="subject.php">
                 <i class="align-middle" data-feather="check-square"></i>
                 <span class="align-middle">Subject</span>
               </a>
             </li>
 
             <li class="sidebar-item">
-              <a class="sidebar-link" href="ui-cards.html">
+              <a class="sidebar-link" href="marks.php">
                 <i class="align-middle" data-feather="grid"></i>
                 <span class="align-middle">Marks</span>
               </a>
             </li>
 
             <li class="sidebar-item">
-              <a class="sidebar-link" href="ui-typography.html">
+              <a class="sidebar-link" href="exam.php">
                 <i class="align-middle" data-feather="align-left"></i>
                 <span class="align-middle">Exams</span>
               </a>
             </li>
 
             <li class="sidebar-item">
-              <a class="sidebar-link" href="icons-feather.html">
+              <a class="sidebar-link" href="student_attendence.php">
                 <i class="align-middle" data-feather="coffee"></i>
                 <span class="align-middle">Student Attendance</span>
               </a>
             </li>
-
             <li class="sidebar-item">
-              <a class="sidebar-link" href="charts-chartjs.html">
-                <i class="align-middle" data-feather="bar-chart-2"></i>
-                <span class="align-middle">Notify</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="charts-chartjs.html">
+              <a class="sidebar-link" href="setting.php">
                 <i class="align-middle" data-feather="bar-chart-2"></i>
                 <span class="align-middle">Setting</span>
               </a>
@@ -140,21 +133,17 @@
                   <i class="align-middle" data-feather="user"></i>
                   <span class="text-dark">Username</span>
                 </a>
-                <div class="dropdown-menu dropdown-menu-end">
-                  <a class="dropdown-item" href="pages-profile.html"
+                <div class="dropdown-menu dropdown-menu-end ">
+                  <a class="dropdown-item " href="profile.php"
                     ><i class="align-middle me-1" data-feather="user"></i>
                     Profile</a
                   >
-                  <a class="dropdown-item" href="#"
-                    ><i class="align-middle me-1" data-feather="pie-chart"></i>
-                    Analytics</a
-                  >
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="index.html"
+                  <a class="dropdown-item" href="setting.php"
                     ><i class="align-middle me-1" data-feather="settings"></i>
                     Settings & Privacy</a
                   >
-                  <a class="dropdown-item" href="#"
+                  <a class="dropdown-item" href="https://tayotech-customersupport.netlify.app/" target="_blank"
                     ><i
                       class="align-middle me-1"
                       data-feather="help-circle"
@@ -179,56 +168,65 @@
           </div>
           <div class="card-footer mt-2" id="itemhide">
               <div class="">
-                <label class='form-label d-block'>Search Particular Teacher</label>
-              <input type="text" placeholder='Search Here ..' class='form-control w-full'>
-              <button class='btn btn-primary mt-2'>Search</button>
+                <label class='form-label'>Search Particular Teacher</label>
+              <input type="text" placeholder='Search Here ..' class='form-control w-full' style="height:40px" id="focus" onkeyup="myFunction()">
               </div>
 
 
               <!-- table of data -->
-              <div class="mt-2">
+              <div class="table-responsive mt-2">
 
-              <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">No</th>
-                <th scope="col">Employe Id</th>
-                <th scope="col">Full Name</th>
-                <th scope="col capitalize">Incharge Class</th>
-                <th scope="col">Subjects Handling</th>
-                <th scope="col">Phone</th>
-                <th scope="col">Action</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Otto</td>
-                <td>Markvdf vdfv dfvdf vdfvdf</td>
-                <td>@mdo</td>
-                <td>@mdo</td>
-                <td>@mdo</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Otto</td>
-                <td>Markvdvdfvdfvdfvdf</td>
-                <td>@mdo</td>
-                <td>@mdo</td>
-                <td>@mdo</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td>@mdo</td>
-                <td>@mdo</td>
-                <td>@mdo</td>
-                
-              </tr>
+              <table class="table" id="table">
+              <thead>
+    <tr>
+      <th class="th-sm">Employe Id
+      </th>
+      <th class="th-sm">Fullname
+      </th>
+      <th class="th-sm">Phone
+      </th>
+      <th class="th-sm">Subject Handling
+      </th>
+      <th class="th-sm">Incharge Class
+      </th>
+      <th class="th-sm">Action
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1403</td>
+      <td>John Doe</td>
+      <td>087654456789</td>
+      <td>Chemistry</td>
+      <td>F2</td>
+      <td>
+        <button class="btn btn-danger mb-1">Delete</button>
+        <button class="btn btn-success">Update</button>
+      </td>
+    </tr>
+    <tr>
+      <td>1403</td>
+      <td>John Doe</td>
+      <td>087654456789</td>
+      <td>Chemistry</td>
+      <td>F2</td>
+      <td>
+        <button class="btn btn-danger  mb-1">Delete</button>
+        <button class="btn btn-success">Update</button>
+      </td>
+    </tr>
+    <tr>
+      <td>1403</td>
+      <td>John Doe</td>
+      <td>087654456789</td>
+      <td>Chemistry</td>
+      <td>F2</td>
+      <td>
+        <button class="btn btn-danger  mb-1">Delete</button>
+        <button class="btn btn-success">Update</button>
+      </td>
+    </tr>
             </tbody>
           </table>
         </div>
@@ -303,6 +301,34 @@
                   <input type="date" class='form-control'>
                  </div>
                 </div>
+                <div class="row px-4 mt-3">
+                <div class='col-12 col-md-4  space-100 col-lg-4'>
+                 <label class='form-label font-bold-100 text-md-info'>Subject Handling</label>
+                  <input type="text" class='form-control' placeholder='Subject Handling'>
+                 </div>
+                 <div class='col-12 col-md-4 space-100 col-lg-4'>
+                 <label class='form-label font-bold-100'>Incharge Class</label>
+                  <input type="text" class='form-control' placeholder='Incharge Class'>
+                 </div>
+                 <div class='col-12 col-md-4 space-100 col-lg-3'>
+                 <label class='form-label font-bold-100'>Employe Code</label>
+                  <input type="text" class='form-control' placeholder='Enter Eploye Id'>
+                 </div>
+                </div>
+                <div class="row px-4 mt-3">
+                <div class='col-12 col-md-4  space-100 col-lg-4'>
+                 <label class='form-label font-bold-100 text-md-info'>Street Address</label>
+                  <input type="text" class='form-control' placeholder='Street Address'>
+                 </div>
+                 <div class='col-12 col-md-4 space-100 col-lg-4'>
+                 <label class='form-label font-bold-100'>City Name</label>
+                  <input type="text" class='form-control' placeholder='City Name'>
+                 </div>
+                 <div class='col-12 col-md-4 space-100 col-lg-3'>
+                 <label class='form-label font-bold-100'>Country</label>
+                  <input type="text" class='form-control' placeholder='Country'>
+                 </div>
+                </div>
                 <div class="px-4">
                 <button class='btn btn-primary mt-4 w-full px-5'>Save</button>
                 </div>
@@ -340,7 +366,30 @@
 
     <script src="../../assets/js/bootstrap.bundle.min.js"></script>
     <script src="../../assets/js/main.js"></script>
+    <script defer>
+        // filter table by search
+        function myFunction() {
+  // Declare variables
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("focus");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("table");
+  tr = table.getElementsByTagName("tr");
 
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+      td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+    </script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         var ctx = document

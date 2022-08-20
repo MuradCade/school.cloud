@@ -68,3 +68,8 @@
 .line-1{
     line-height: 30px;
 }
+
+#focus:focus{
+border:2px solid black !important;
+outline: none;
+}

@@ -7,16 +7,18 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    
+   
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="shortcut icon" href="img/icons/icon-48x48.png" />
 
     <link rel="canonical" href="https://demo-basic.adminkit.io/" />
 
-    <title>Dashboard</title>
+    <title>Marks</title>
 
     <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../assets/css/style.css" rel="stylesheet" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"
       rel="stylesheet"
@@ -32,7 +34,7 @@
           </a>
 
           <ul class="sidebar-nav">
-            <li class="sidebar-item active">
+            <li class="sidebar-item ">
               <a class="sidebar-link" href="index.php">
                 <i class="align-middle" data-feather="sliders"></i>
                 <span class="align-middle">Dashboard</span>
@@ -47,7 +49,7 @@
             </li>
 
             <li class="sidebar-item">
-              <a class="sidebar-link"  href="student.php">
+              <a class="sidebar-link" href="student.php">
                 <i class="align-middle" data-feather="credit-card"></i>
                 <span class="align-middle">Student</span>
               </a>
@@ -60,8 +62,8 @@
               </a>
             </li>
 
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="class.php">
+            <li class="sidebar-item ">
+              <a class="sidebar-link" href="ui-buttons.html">
                 <i class="align-middle" data-feather="columns"></i>
                 <span class="align-middle">Classes</span>
               </a>
@@ -74,7 +76,7 @@
               </a>
             </li>
 
-            <li class="sidebar-item">
+            <li class="sidebar-item active">
               <a class="sidebar-link" href="marks.php">
                 <i class="align-middle" data-feather="grid"></i>
                 <span class="align-middle">Marks</span>
@@ -157,153 +159,153 @@
         </nav>
 
         <main class="content">
-          <div class="container-fluid p-0">
-            <h1 class="h3 mb-3"><strong>School</strong> Dashboard</h1>
 
-            <div class="row">
-              <div class="col-xl-6 col-xxl-5 d-flex">
-                <div class="w-100">
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <div class="card">
-                        <div class="card-body">
-                          <div class="row">
-                            <div class="col mt-0">
-                              <h5 class="card-title">Students</h5>
-                            </div>
-
-                            <div class="col-auto">
-                              <div class="stat text-primary">
-                                <i class="align-middle" data-feather="user"></i>
-                              </div>
-                            </div>
-                          </div>
-                          <h1 class="mt-1 mb-3">0</h1>
-                          <div class="mb-0">
-                            <span class="text-muted">Number Of Students</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="card-body">
-                          <div class="row">
-                            <div class="col mt-0">
-                              <h5 class="card-title">Parents</h5>
-                            </div>
-
-                            <div class="col-auto">
-                              <div class="stat text-primary">
-                                <i class="align-middle" data-feather="book"></i>
-                              </div>
-                            </div>
-                          </div>
-                          <h1 class="mt-1 mb-3">0</h1>
-                          <div class="mb-0">
-                            <span class="text-success">
-                              <i class="mdi mdi-arrow-bottom-right"></i>
-                            </span>
-                            <span class="text-muted">Number oF Parents</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-6">
-                      <div class="card">
-                        <div class="card-body">
-                          <div class="row">
-                            <div class="col mt-0">
-                              <h5 class="card-title">Teachers</h5>
-                            </div>
-
-                            <div class="col-auto">
-                              <div class="stat text-primary">
-                                <i
-                                  class="align-middle"
-                                  data-feather="sliders"
-                                ></i>
-                              </div>
-                            </div>
-                          </div>
-                          <h1 class="mt-1 mb-3">0</h1>
-                          <div class="mb-0">
-                            <span class="text-success">
-                              <i class="mdi mdi-arrow-bottom-right"></i>
-                            </span>
-                            <span class="text-muted">Number Of Teachers</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="card-body">
-                          <div class="row">
-                            <div class="col mt-0">
-                              <h5 class="card-title">Classes</h5>
-                            </div>
-
-                            <div class="col-auto">
-                              <div class="stat text-primary">
-                                <i
-                                  class="align-middle"
-                                  data-feather="layout"
-                                ></i>
-                              </div>
-                            </div>
-                          </div>
-                          <h1 class="mt-1 mb-3">0</h1>
-                          <div class="mb-0">
-                            <span class="text-danger">
-                              <i class="mdi mdi-arrow-bottom-right"></i>
-                            </span>
-                            <span class="text-muted">Number Of Classes</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-xl-6 col-xxl-7">
-                <div class="card flex-fill w-100">
-                  <div class="card-header">
-                    <h5 class="card-title mb-0">Users Analytics</h5>
-                  </div>
-                  <div class="card-body py-3">
-                    <div class="chart chart-sm">
-                      <canvas id="chartjs-dashboard-line"></canvas>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-12 col-md-8 col-xxl-8 d-flex order-1 order-xxl-1">
-                <div class="card flex-fill">
-                  <div class="card-header">
-                    <h5 class="card-title mb-0">Calendar</h5>
-                  </div>
-                  <div class="card-body d-flex">
-                    <div class="align-self-center w-100">
-                      <div class="chart">
-                        <div id="datetimepicker-dashboard"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        
+           
+        <!-- end of -->
+          <div class="container-fluid p-0 d-flex align-items-center justify-content-between mb-2">
+            <p class= "mb-3"><span style="font-size:14px; color:gray;">Dashboard</span> / <strong>Marks</strong></p>
           </div>
-        </main>
+          <div class="card-footer mt-2" id="itemhide">
+            
 
-        <?php
-        include_once('footer.php');
-        ?>
+<!-- marks -->
+<div class="card-footer">
+              <div class="form-group">
+                  <p style="font-weight:bold; text-transform:uppercase;">STUDENTS MARKS</p>
+                  <div class="container">
+                    <div class="row">
+                    <div class='col-12 col-md-12  space-100 col-lg-3'>
+                    <label class='form-label font-bold-100'>Class</label>
+                  <select class="form-control">
+                    <option value="">Select Class</option>
+                    <option value="">John Doe</option>
+                  </select>
+                    </div>
+                    <div class='col-12 col-md-12  space-100 col-lg-4'>
+                    <label class='form-label font-bold-100'>Exam</label>
+                  <select class="form-control">
+                    <option value="">Select Exam</option>
+                    <option value="">John Doe</option>
+                  </select>
+                    </div>
+                    <div class='col-12 col-md-12  space-100 col-lg-4'>
+                    <label class='form-label font-bold-100'>Subject</label>
+                  <select class="form-control">
+                    <option value="">Select Subject</option>
+                    <option value="">John English</option>
+                  </select>
+                    </div>
+                    <div class='col-12 col-md-12  space-100 col-lg-4 mt-4'>
+                    <button class="btn btn-success">Add/Update</button>
+                    <button class="btn btn-secondary">Export</button>
+                    <button class="btn btn-info">View Marks</button>
+                    </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+<!-- end marks -->
+              <!-- table of data -->
+              <div class="mt-2" id="tabledata" >
+              <div class="mb-3">
+              <input type="search" placeholder='Search Here ..' class='form-control' style="height:40px" id="focus" onkeyup="myFunction()">
+              </div>
+              <table class="table table-bordered" id="table">
+              <thead>
+    <tr>
+      <th class="th-sm">Roll No.
+      </th>
+      <th class="th-sm">Name
+      </th>
+      <th class="th-sm">Marks
+      </th>
+      <th class="th-sm">Total
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td>F2</td>
+      <td>John Doe</td>
+      <td>40</td>
+      <td>50</td>
+    </tr>
+    <tr>
+        <td>F3</td>
+      <td>John Doe</td>
+      <td>40</td>
+      <td>50</td>
+    </tr>
+    <tr>
+        <td>F4</td>
+      <td>John Doe</td>
+      <td>40</td>
+      <td>50</td>
+    </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- end table -->
       </div>
+      <div class="container" id="addteacherinfo">
+      
+        
+        <!-- extre space -->
+        <div class="card-footer"></div>
+        <br>
+        <!-- account Details -->
+        <div class="" id="addteacherasuser">
+          <!-- <p Class='h5 font-bold line-1'>ACCOUNT INFORMATION</p>
+          <div class="container">
+            <div class="form-group">
+              <label class='form-label'>Email Address <span class='text-danger'>*</span></label>
+              <input type="email" class='form-control mb-2' placeholder='Enter Email...'>
+              <label class='form-label'>Username <span class='text-danger'>*</span></label>
+              <input type="text" class='form-control mb-2' placeholder='Enter Username...'>
+              <label class='form-label'>Password <span class='text-danger'>*</span></label>
+              <input type="password" class='form-control mb-2' placeholder='Enter Password...'>
+              <label class='form-label'>Confirm Password <span class='text-danger'>*</span></label>
+              <input type="email" class='form-control' placeholder='Confirm Password...'>
+              <button class='btn btn-success mt-2'>Add New User</button>
+            </div>
+          </div> -->
+        </div>
+
+        </main>
+        <?php
+          include_once('footer.php');
+       ?>
+       </div>
     </div>
 
     <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/jquery.js"></script>
+    <script src="../../assets/js/tabledata.js"></script>
+    <script defer>
+        // filter table by search
+        function myFunction() {
+  // Declare variables
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("focus");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("table");
+  tr = table.getElementsByTagName("tr");
 
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+      td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+    </script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         var ctx = document
