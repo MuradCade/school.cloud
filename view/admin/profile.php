@@ -165,40 +165,130 @@
           </div>
           <div class="card-footer mt-2" id="itemhide">
           <p class=' h5 font-bold' style="line-height:2; text-transform:uppercase;">Profile Settings</p>
-          <div class="container rounded bg-white mt-5 mb-5">
+        
+<section style="background-color: #eee;">
+  <div class="container py-5">
+    
+
     <div class="row">
-        <div class="col-md-5 border-right">
-            <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" width="150px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"><span class="font-weight-bold">Edogaru</span><span class="text-black-50">edogaru@mail.com.my</span><span> </span></div>
+      <div class="col-lg-4">
+        <div class="card mb-4">
+          <div class="card-body text-center">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp" alt="avatar"
+              class="rounded-circle img-fluid" style="width: 150px;">
+            <h5 class="my-2"><strong>Name :</strong> Jondoe</h5>
+            <label>Choose Image</label>
+            <input type="file" class="form-control">
+         
+          </div>
         </div>
-        <div class="col-md-5 border-right">
-            <div class="p-3 py-5">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                </div>
-                <div class="row mt-2">
-                    <div class="col-md-12 mb-2">
-                        <label class="labels mb-1">Fullname</label>
-                        <input type="text" class="form-control" placeholder="Fullname"></div>
-                </div>
-                <div class="row mt-2">
-                    <div class="col-md-12 mb-2">
-                        <label class="labels mb-1">Phone</label>
-                        <input type="text" class="form-control" placeholder="Phone Number"></div>
-                    <div class="col-md-12 mt-2">
-                        <label class="labels mb-1">Email</label>
-                        <input type="text" class="form-control" placeholder="Email"></div>
-                    <div class="col-md-12 mt-2">
-                        <label class="labels mb-1">Role</label>
-                        <input type="text" class="form-control" placeholder="Role"></div>
-                    <div class="col-md-12">
-                        <label class="labels mt-2">Current Position</label>
-                        <input type="text" class="form-control" placeholder="Current Position"></div>
-                    <div class="col-md-12 mt-2">
-                        <label class="labels mb-1">Education</label>
-                        <input type="text" class="form-control" placeholder="Education"></div>
-                </div>
-                <div class="mt-5 text-center"><button class="btn btn-primary" type="button">Save Profile</button></div>
+        <div class="card mb-4 mb-lg-0">
+          <div class="card-body p-0">
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="card mb-4">
+          <div class="card-body">
+          <p class="h4 mb-5" style="font-weight:bold !important;">Personal Information</p>
+
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Full Name</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0"><input type="text" class="form-control" value="John Doe"></p>
+              </div>
             </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Email</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0"><input type="text" class="form-control" value="example@example.com "></p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Phone</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0"><input type="text" class="form-control" value="(097) 234-5678"></p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Class</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0"><input type="text" class="form-control" value="Form 2A"></p>
+              </div>
+            </div>
+            <hr>
+            <!-- password change -->
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">School Name</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0"><input type="text" class="form-control" value="SMS"></p>
+              </div>
+            </div>
+            <hr>
+            <div class="col-sm-12 mt-4 text-start">
+                <button class="btn btn-success btn-lg">Update</button>
+            </div>
+          </div>
         </div>
+       <!-- change password -->
+       <div class="col-lg-12">
+        <div class="card mb-4">
+          <div class="card-body">
+            <p class="h4 mb-5" style="font-weight:bold !important;">Change Password</p>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">New Password</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0"><input type="text" class="form-control" placeholder="Enter New Password"></p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Confirm New Password</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0"><input type="text" class="form-control" placeholder="Confirm New Password"></p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Your Id</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0"><input type="text" class="form-control" value="08990" readonly></p>
+              </div>
+            </div>
+            <hr>
+            <div class="col-sm-12 mt-4 text-start">
+                <button class="btn btn-info btn-lg">Submit</button>
+            </div>
+          </div>
+        </div>
+          
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
         
     </div>
 </div>
@@ -213,7 +303,6 @@
       </div>
       <div class="container" id="addteacherinfo" style='display:none'>
         <div class="card-footer rounded">
-          <p class=' h5 font-bold' style="line-height:2; text-transform:uppercase;">NEW SUBJECT ENTRY</p>
         
       
         <!-- extre space -->

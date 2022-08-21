@@ -14,11 +14,10 @@
 
     <link rel="canonical" href="https://demo-basic.adminkit.io/" />
 
-    <title>Dashboard</title>
+    <title>Setting</title>
 
     <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="../../assets/css/style.css" rel="stylesheet" />
-    <link href="../../assets/css/student.css" rel="stylesheet" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"
@@ -31,17 +30,23 @@
       <nav id="sidebar" class="sidebar js-sidebar">
         <div class="sidebar-content js-simplebar">
           <a class="sidebar-brand" href="index.php">
-            <span class="align-middle">Studet Dashboard</span>
+            <span class="align-middle">Admin Dashboard</span>
           </a>
 
           <ul class="sidebar-nav">
-            <li class="sidebar-item active">
+            <li class="sidebar-item ">
               <a class="sidebar-link" href="index.php">
                 <i class="align-middle" data-feather="sliders"></i>
                 <span class="align-middle">Dashboard</span>
               </a>
-              </li>
+            </li>
             <li class="sidebar-item">
+              <a class="sidebar-link" href="student_attendence.php">
+                <i class="align-middle" data-feather="coffee"></i>
+                <span class="align-middle">Student Attendance</span>
+              </a>
+            </li>
+            <li class="sidebar-item active">
               <a class="sidebar-link" href="setting.php">
                 <i class="align-middle" data-feather="settings"></i>
                 <span class="align-middle">Setting</span>
@@ -79,13 +84,24 @@
                   <span class="text-dark">Username</span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-end ">
+                  <a class="dropdown-item " href="profile.php"
+                    ><i class="align-middle me-1" data-feather="user"></i>
+                    Profile</a
+                  >
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="setting.php"
                     ><i class="align-middle me-1" data-feather="settings"></i>
                     Settings & Privacy</a
                   >
+                  <a class="dropdown-item" href="https://tayotech-customersupport.netlify.app/" target="_blank"
+                    ><i
+                      class="align-middle me-1"
+                      data-feather="help-circle"
+                    ></i>
+                    Help Center</a
+                  >
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Logout</a>
+                  <a class="dropdown-item" href="#">Log out</a>
                 </div>
               </li>
             </ul>
@@ -94,77 +110,53 @@
 
         <main class="content">
           <div class="container-fluid p-0 d-flex align-items-center justify-content-between mb-2">
-            <p class= "mb-3"><span style="font-size:14px; color:gray;"><strong>Dashboard</strong></p>
+            <p class= "mb-3"><span style="font-size:14px; color:gray;">Dashboard</span> / <strong>Setting</strong></p>
+         
           </div>
           <div class="card-footer mt-2" id="itemhide">
+          <p class=' h5 font-bold' style="line-height:2; text-transform:uppercase;">Configure Your Setting</p>
               
-
+  <!-- teacher form -->
+  <div class="card-footer">
+        <div class="form-group">
+              <form>
+             <div class="container mt-4">
+             <div class="row px-4">
+                <div class='col-12 col-md-12  space-100 col-lg-8'>
+                 <label class='form-label font-bold-100 text-md-info'>New Password</label>
+                  <input type="text" class='form-control' placeholder="New Password...">
+                 </div>
+                 <div class='col-12 col-md-12 space-100 col-lg-8 mb-2'>
+                 <label class='form-label font-bold-100 mt-2 mb-2'>Confirm New Password</label>
+                  <input type="text" class='form-control' placeholder="Confirm New Password...">
+                 </div> 
+                 <div class='col-12 col-md-12 space-100 col-lg-8 mb-2'>
+                 <label class='form-label font-bold-100 mt-2 mb-2'>Your Id</label>
+                  <input type="text" class='form-control'  value="1023" readonly>
+                 </div> 
+                </div>
+             </div>
+                <!-- third row input field -->
+               
+                <div class="px-4">
+                <button class='btn btn-primary mt-4'>Submit</button>
+                <button class='btn btn-secondary mt-4'>Back</button>
+                </div>
+              </div>
+              </form>
+            </div>
+        </div>
 
               <!-- table of data -->
-              <div class="mt-2">
-
-          <!-- display student data -->
-<div class="card text-center">
-  <div class="card-header">
-    <ul class="nav nav-tabs card-header-tabs">
-      <li class="nav-item semesters">
-        <a class="nav-link active" href="index.php" id="semester-title"  style="background-color:#dcd7d7 !important;">Form1</a>
-      </li>
-      <li class="nav-item semesters">
-        <a class="nav-link" href="form2.php" id="semester-title">Form2</a>
-      </li>
-      <li class="nav-item semesters">
-        <a class="nav-link" href="form3.php" id="semester-title">Form3</a>
-      </li>
-      <li class="nav-item semesters">
-        <a class="nav-link  text-info" href="form4.php" id="semester-title">Form4</a>
-      </li>
-    </ul>
-  </div>
-  <div class="card-body">
-  <table class="table table-striped  table-bordered" style="border:3px !important;">
-  <thead>
-    <tr>
-      <th scope="col" class="titles">Courses</th>
-      <th scope="col" class="titles">Mid</th>
-      <th scope="col" class="titles">Final</th>
-      <th scope="col" class="titles">Total</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">Eng</th>
-      <td>50</td>
-      <td>60</td>
-      <td>110</td>
-    </tr>
-    <tr>
-      <th scope="row">Arabic</th>
-      <td>40</td>
-      <td>60</td>
-      <td>100</td>
-    </tr>
-    <tr>
-      <th scope="row">Somali</th>
-      <td>80</td>
-      <td>20</td>
-      <td>100</td>
-    </tr>
-  </tbody>
-</table>
-  </div>
-</div>
+              
         </div>
         <!-- end table -->
       </div>
       <div class="container" id="addteacherinfo" style='display:none'>
         <div class="card-footer rounded">
-          <p class=' h5 font-bold' style="line-height:2; text-transform:uppercase;">Add Class Information</p>
+          <p class=' h5 font-bold' style="line-height:2; text-transform:uppercase;">NEW SUBJECT ENTRY</p>
         
-        <!-- teacher form -->
-        <div class="card-footer">
-        
-        </div>
+      
         <!-- extre space -->
         <div class="card-footer"></div>
         <br>
@@ -194,7 +186,6 @@
     </div>
 
     <script src="../../assets/js/bootstrap.bundle.min.js"></script>
-    <script src="../../assets/js/main.js"></script>
-    
+  
   </body>
 </html>

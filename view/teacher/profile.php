@@ -14,11 +14,10 @@
 
     <link rel="canonical" href="https://demo-basic.adminkit.io/" />
 
-    <title>Dashboard</title>
+    <title>Setting</title>
 
     <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="../../assets/css/style.css" rel="stylesheet" />
-    <link href="../../assets/css/student.css" rel="stylesheet" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"
@@ -31,17 +30,23 @@
       <nav id="sidebar" class="sidebar js-sidebar">
         <div class="sidebar-content js-simplebar">
           <a class="sidebar-brand" href="index.php">
-            <span class="align-middle">Studet Dashboard</span>
+            <span class="align-middle">Admin Dashboard</span>
           </a>
 
           <ul class="sidebar-nav">
-            <li class="sidebar-item">
+            <li class="sidebar-item ">
               <a class="sidebar-link" href="index.php">
                 <i class="align-middle" data-feather="sliders"></i>
                 <span class="align-middle">Dashboard</span>
               </a>
-              </li>
-            <li class="sidebar-item active">
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="student_attendence.php">
+                <i class="align-middle" data-feather="coffee"></i>
+                <span class="align-middle">Student Attendance</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
               <a class="sidebar-link" href="setting.php">
                 <i class="align-middle" data-feather="settings"></i>
                 <span class="align-middle">Setting</span>
@@ -79,13 +84,24 @@
                   <span class="text-dark">Username</span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-end ">
+                  <a class="dropdown-item " href="profile.php"
+                    ><i class="align-middle me-1" data-feather="user"></i>
+                    Profile</a
+                  >
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="setting.php"
                     ><i class="align-middle me-1" data-feather="settings"></i>
                     Settings & Privacy</a
                   >
+                  <a class="dropdown-item" href="https://tayotech-customersupport.netlify.app/" target="_blank"
+                    ><i
+                      class="align-middle me-1"
+                      data-feather="help-circle"
+                    ></i>
+                    Help Center</a
+                  >
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Logout</a>
+                  <a class="dropdown-item" href="#">Log out</a>
                 </div>
               </li>
             </ul>
@@ -94,16 +110,11 @@
 
         <main class="content">
           <div class="container-fluid p-0 d-flex align-items-center justify-content-between mb-2">
-            <p class= "mb-3"><span style="font-size:14px; color:gray;">Dashboard / <strong> Setting </strong></p>
+            <p class= "mb-3"><span style="font-size:14px; color:gray;">Dashboard</span> / <strong>Profile</strong></p>
+         
           </div>
           <div class="card-footer mt-2" id="itemhide">
-              
-
-
-              <!-- table of data -->
-              <div class="mt-2">
-                
-
+       
 <section style="background-color: #eee;">
   <div class="container py-5">
     
@@ -227,19 +238,19 @@
     </div>
   </div>
 </section>
+</div>    
+  
 
-</div>
+              <!-- table of data -->
+              
         </div>
         <!-- end table -->
       </div>
       <div class="container" id="addteacherinfo" style='display:none'>
         <div class="card-footer rounded">
-          <p class=' h5 font-bold' style="line-height:2; text-transform:uppercase;">Add Class Information</p>
+          <p class=' h5 font-bold' style="line-height:2; text-transform:uppercase;">NEW SUBJECT ENTRY</p>
         
-        <!-- teacher form -->
-        <div class="card-footer">
-        
-        </div>
+      
         <!-- extre space -->
         <div class="card-footer"></div>
         <br>
@@ -269,12 +280,6 @@
     </div>
 
     <script src="../../assets/js/bootstrap.bundle.min.js"></script>
-    <script src="../../assets/js/main.js"></script>
-    
+  
   </body>
 </html>
-
-
-
-
-

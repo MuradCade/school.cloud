@@ -1,27 +1,10 @@
-.nav-item  a:hover{
-    border-bottom: 2px solid blue;
-}
-
-
-.nav-item a{
-    font-weight: 800 !important;
-}
-
-.active{
-    color:#1f72c5 !important;
-    font-weight: 800 !important;
-}
-
-
-.nav-link{
-    text-decoration: none !important;
-    color:darkgrey;
-}
-
 .titles{
-    font-weight: 800 !important;
+    color:#000000 !important;
+}
+#semester-title{
+    color:#000000  !important;
+    text-decoration: none !important;
+    font-weight: bold;
 }
 
-td{
-    font-weight: 800 !important;
-}
+

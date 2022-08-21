@@ -169,12 +169,12 @@
             <!-- teacher form -->
             <div class="card-footer mt-2">
        
-              <p class=' h5 font-bold' style="line-height:2; text-transform:uppercase;">Configure Your Setting</p>
+              <p class=' h5 font-bold' style="line-height:2; text-transform:uppercase;">Configure Teacher Setting</p>
               <div class="card ">
                 <div class="card-header">
                   <ul class="nav nav-tabs card-header-tabs">
                     <li class="nav-item semesters">
-        <a class="nav-link active" href="setting.php" id="semester-title"   style="background-color:#dcd7d7 !important; font-weight:bold">Change Admin Password</a>
+        <a class="nav-link" href="setting.php" id="semester-title">Change Admin Password</a>
       </li>
       <li class="nav-item semesters">
         <a class="nav-link" href="studentpwd.php" id="semester-title">Change Student Password</a>
@@ -183,7 +183,7 @@
         <a class="nav-link" href="parentpwd.php" id="semester-title">Change Parent Password</a>
       </li>
       <li class="nav-item semesters">
-        <a class="nav-link  text-info" href="teacherpwd.php" id="semester-title">Change Teacher Password</a>
+        <a class="nav-link  text-info active" href="teacherpwd.php" id="semester-title"  style="background-color:#dcd7d7 !important; font-weight:bold">Change Teacher Password</a>
       </li>
      
     </ul>
